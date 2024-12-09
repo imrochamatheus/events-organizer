@@ -13,6 +13,8 @@ public class Participant {
     private Integer id;
 
     private String name;
+
+    @Column(unique = true)
     private String email;
 
     @ManyToMany(mappedBy = "participants")
